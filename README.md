@@ -23,18 +23,12 @@ performance metrics in artificial intelligence-assisted medical image analysis.
 *J Med Imaging.* 2024;11(2):024504.
 doi: [10.1117/1.JMI.11.2.024504](https://doi.org/10.1117/1.JMI.11.2.024504).
 
-## Disclaimer: Regulatory Science Tool (RST)
+## Disclaimer
+## About the Catalog of Regulatory Science Tools
 
-This tool serves as a Regulatory Science Tool (RST) and provides information and
-resources concerning performance evaluation metrics and methods for AI/ML classification tasks in
-the medical imaging domain. It is not intended to replace FDA-recognized standards
-or FDA Medical Device Development Tools (MDDT).
+The enclosed tool is part of the Catalog of Regulatory Science Tools, which provides a peer-reviewed resource for stakeholders to use where standards and qualified Medical Device Development Tools (MDDTs) do not yet exist. These tools do not replace FDA-recognized standards or MDDTs. This catalog collates a variety of regulatory science tools that the FDA's Center for Devices and Radiological Health's (CDRH) Office of Science and Engineering Labs (OSEL) developed. These tools use the most innovative science to support medical device development and patient access to safe and effective medical devices. If you are considering using a tool from this catalog in your marketing submissions, note that these tools have not been qualified as Medical Device Development Tools and the FDA has not evaluated the suitability of these tools within any specific context of use. You may request feedback or meetings for medical device submissions as part of the Q-Submission Program.
 
-This tool should not be interpreted as an FDA endorsement or recommendation for
-specific metrics to be used in the evaluation of medical imaging AI/ML devices.
-
-For more information about Regulatory Science Tools, visit:
-https://www.fda.gov/medical-devices/science-and-research-medical-devices/catalog-regulatory-science-tools-help-assess-new-medical-devices
+For more information about the Catalog of Regulatory Science Tools, email RST_CDRH@fda.hhs.gov.
 
 ---
 
@@ -54,7 +48,6 @@ and Bioengineering (NIBIB) of the National Institutes of Health under contracts
 
 ## Requirements
 
-- Python 3.8 or higher
 - Streamlit
 
 ---
@@ -65,16 +58,19 @@ and Bioengineering (NIBIB) of the National Institutes of Health under contracts
 
 If using Git:
 
-bash
-git clone https://github.com/YOURUSERNAME/mic-met-classification.git
-cd mic-met-classification
+```
+git clone https://github.com/DIDSR/MIC_MET_Tree.git
+cd MIC_MET_Tree
+```
+```
+pip install -r requirements.txt
+```
 
 
 Or download the ZIP file from GitHub and unzip it.
 
 **Step 2 — Install required packages**
 
-bash
 pip install -r requirements.txt
 
 
@@ -83,12 +79,12 @@ pip install -r requirements.txt
 ## How to Run the App
 
 **Option 1 — Using standard Python:**
-bash
-"C:\Program Files\Python312\python.exe" -m streamlit run app.py
+
+python -m streamlit run app.py
 
 
 **Option 2 — If streamlit is on your system PATH:**
-bash
+
 streamlit run app.py
 
 
@@ -110,37 +106,36 @@ The app will open automatically in your default web browser at:
 ## Folder Structure
 
 mic-met-classification/
+├── app.py                        # Main entry point — run this to start the app
 │
-├── app.py                          ← Main entry point — run this to start the app
+├── tree/                         # Decision tree content
+│   ├── registry.py               # Assembles all nodes into one lookup dictionary
+│   └── nodes/                    # One file per page of the decision tree
+│       ├── q0welcome.py          # Welcome / classification type question
+│       ├── q1binaryrefstd.py     # Binary: reference standard question
+│       ├── q2binaryoutput.py     # Binary: output type question
+│       ├── q3multirefstd.py      # Multi-class: reference standard question
+│       ├── q4multioutput.py      # Multi-class: output type question
+│       ├── q5multilabels.py      # Multi-class: number of labels question
+│       ├── q6multimeasurement.py # Multi-class: level of measurement question
+│       ├── n01binarytruthvar.py  # Binary: truth variability metrics
+│       ├── n02binary2x2.py       # Binary: 2x2 confusion matrix metrics
+│       ├── n03binarycurve.py     # Binary: operating curve metrics
+│       ├── n11multitruthvar.py   # Multi-class: truth variability metrics
+│       ├── n12multiscore.py      # Multi-class: score output metrics
+│       ├── n13multitopn.py       # Multi-class: top-n accuracy metrics
+│       ├── n14multikbyk.py       # Multi-class: kxk confusion matrix metrics
+│       └── n15multiordinal.py    # Multi-class: ordinal classification metrics
 │
-├── tree/                           ← Decision tree content
-│   ├── registry.py                 ← Assembles all nodes into one lookup dictionary
-│   └── nodes/                      ← One file per page of the decision tree
-│       ├── q0welcome.py           ← Welcome / classification type question
-│       ├── q1binaryrefstd.py     ← Binary: reference standard question
-│       ├── q2binaryoutput.py     ← Binary: output type question
-│       ├── q3multirefstd.py      ← Multi-class: reference standard question
-│       ├── q4multioutput.py      ← Multi-class: output type question
-│       ├── q5multilabels.py      ← Multi-class: number of labels question
-│       ├── q6multimeasurement.py ← Multi-class: level of measurement question
-│       ├── n01binarytruthvar.py ← Binary: truth variability metrics
-│       ├── n02binary2x2.py       ← Binary: 2x2 confusion matrix metrics
-│       ├── n03binarycurve.py     ← Binary: operating curve metrics
-│       ├── n11multitruthvar.py  ← Multi-class: truth variability metrics
-│       ├── n12multiscore.py      ← Multi-class: score output metrics
-│       ├── n13multitopn.py       ← Multi-class: top-n accuracy metrics
-│       ├── n14multikbyk.py       ← Multi-class: kxk confusion matrix metrics
-│       └── n15multiordinal.py    ← Multi-class: ordinal classification metrics
+├── ui/                           # User interface rendering
+│   ├── renderer.py               # Universal node renderer
+│   ├── navigation.py             # Back / Start Over buttons and history display
+│   └── styles.py                 # CSS styling
 │
-├── ui/                             ← User interface rendering
-│   ├── renderer.py                 ← Universal node renderer
-│   ├── navigation.py               ← Back / Start Over buttons and history display
-│   └── styles.py                   ← CSS styling
+├── utils/                        # Shared utilities
+│   └── images.py                 # Image loading helper
 │
-├── utils/                          ← Shared utilities
-│   └── images.py                   ← Image loading helper
-│
-├── img/                            ← Static image assets
+├── img/                          # Static image assets
 │   ├── G02binary2x2FigC.jpg
 │   ├── G03binaryROCoverviewFig1300.jpg
 │   ├── G03binaryAUROCFig1C.jpg
@@ -156,9 +151,9 @@ mic-met-classification/
 │   ├── G15kClassordinalfigC.jpg
 │   └── G15kClassordinalConfusionTabfigC.jpg
 │
-├── requirements.txt                ← Python package dependencies
-├── .gitignore                      ← Files excluded from Git
-└── README.md                       ← This file
+├── requirements.txt              # Python package dependencies
+├── .gitignore                    # Files excluded from Git
+└── README.md                     # This file
 
 
 ---
