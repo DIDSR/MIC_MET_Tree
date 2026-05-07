@@ -26,7 +26,7 @@ doi: [10.1117/1.JMI.11.2.024504](https://doi.org/10.1117/1.JMI.11.2.024504).
 ## Disclaimer
 ## About the Catalog of Regulatory Science Tools
 
-The enclosed tool is part of the Catalog of Regulatory Science Tools, which provides a peer-reviewed resource for stakeholders to use where standards and qualified Medical Device Development Tools (MDDTs) do not yet exist. These tools do not replace FDA-recognized standards or MDDTs. This catalog collates a variety of regulatory science tools that the FDA's Center for Devices and Radiological Health's (CDRH) Office of Science and Engineering Labs (OSEL) developed. These tools use the most innovative science to support medical device development and patient access to safe and effective medical devices. If you are considering using a tool from this catalog in your marketing submissions, note that these tools have not been qualified as Medical Device Development Tools and the FDA has not evaluated the suitability of these tools within any specific context of use. You may request feedback or meetings for medical device submissions as part of the Q-Submission Program.
+The enclosed tool is part of the Catalog of Regulatory Science Tools (https://cdrh-rst.fda.gov/), which provides a peer-reviewed resource for stakeholders to use where standards and qualified Medical Device Development Tools (MDDTs) do not yet exist. These tools do not replace FDA-recognized standards or MDDTs. This catalog collates a variety of regulatory science tools that the FDA's Center for Devices and Radiological Health's (CDRH) Office of Science and Engineering Labs (OSEL) developed. These tools use the most innovative science to support medical device development and patient access to safe and effective medical devices. If you are considering using a tool from this catalog in your marketing submissions, note that these tools have not been qualified as Medical Device Development Tools (https://www.fda.gov/medical-devices/medical-device-development-tools-mddt) and the FDA has not evaluated the suitability of these tools within any specific context of use. You may request feedback or meetings for medical device submissions (https://www.fda.gov/regulatory-information/search-fda-guidance-documents/requests-feedback-and-meetings-medical-device-submissions-q-submission-program) as part of the Q-Submission Program.
 
 For more information about the Catalog of Regulatory Science Tools, email RST_CDRH@fda.hhs.gov.
 
@@ -62,16 +62,16 @@ If using Git:
 git clone https://github.com/DIDSR/MIC_MET_Tree.git
 cd MIC_MET_Tree
 ```
-```
-pip install -r requirements.txt
-```
 
 
 Or download the ZIP file from GitHub and unzip it.
 
 **Step 2 — Install required packages**
 
+```
 pip install -r requirements.txt
+```
+
 
 
 ---
@@ -79,14 +79,14 @@ pip install -r requirements.txt
 ## How to Run the App
 
 **Option 1 — Using standard Python:**
-
+```
 python -m streamlit run app.py
-
-
+```
 **Option 2 — If streamlit is on your system PATH:**
 
+```
 streamlit run app.py
-
+```
 
 The app will open automatically in your default web browser at:
 `http://localhost:8501`
