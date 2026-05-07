@@ -5,7 +5,7 @@ NODE = {
   "title": "Classification",
   "type": "question",
   "content_html": """
-    <section style="
+    <details open style="
       margin-bottom: 2rem;
       background-color: #fff3cd;
       border: 2px solid #f0a500;
@@ -14,15 +14,19 @@ NODE = {
       padding: 1.5rem;
       box-shadow: 0 2px 8px rgba(217, 119, 6, 0.15);
     ">
-      <h2 style="
-        font-size: 1.4rem;
+      <summary style="
+        font-size: 1.3rem;
         font-weight: bold;
         color: #7c4a00;
-        margin-bottom: 1rem;
+        cursor: pointer;
+        list-style: none;
         display: flex;
         align-items: center;
         gap: 0.5rem;
-      ">&#9888;&#65039; Disclaimer</h2>
+        margin-bottom: 0.75rem;
+      ">
+        &#9888;&#65039; Disclaimer &nbsp;<span style="font-size:0.95rem; font-weight:400;">(click to collapse after reading)</span>
+      </summary>
       <h3 style="
         font-size: 1.1rem;
         font-weight: 700;
@@ -30,26 +34,29 @@ NODE = {
         margin-bottom: 0.75rem;
       ">About the Catalog of Regulatory Science Tools</h3>
       <p style="color: #4a3000; line-height: 1.7; margin-bottom: 0.75rem;">
-        The enclosed tool is part of the Catalog of Regulatory Science Tools, which provides a peer-reviewed resource
-        for stakeholders to use where standards and qualified Medical Device Development Tools (MDDTs) do not yet exist.
-        These tools do not replace FDA-recognized standards or MDDTs. This catalog collates a variety of regulatory
-        science tools that the FDA's Center for Devices and Radiological Health's (CDRH) Office of Science and
-        Engineering Labs (OSEL) developed. These tools use the most innovative science to support medical device
-        development and patient access to safe and effective medical devices.
+        The enclosed tool is part of the Catalog of Regulatory Science Tools
+        (https://cdrh-rst.fda.gov/), which provides a peer-reviewed resource
+        for stakeholders to use where standards and qualified Medical Device
+        Development Tools (MDDTs) do not yet exist. These tools do not replace
+        FDA-recognized standards or MDDTs. This catalog collates a variety of
+        regulatory science tools that the FDA's Center for Devices and
+        Radiological Health's (CDRH) Office of Science and Engineering Labs
+        (OSEL) developed. These tools use the most innovative science to support
+        medical device development and patient access to safe and effective
+        medical devices.
       </p>
       <p style="color: #4a3000; line-height: 1.7; margin-bottom: 0.75rem;">
-        If you are considering using a tool from this catalog in your marketing submissions, note that these tools
-        have not been qualified as Medical Device Development Tools and the FDA has not evaluated the suitability
-        of these tools within any specific context of use. You may request feedback or meetings for medical device
-        submissions as part of the Q-Submission Program.
+        If you are considering using a tool from this catalog in your marketing
+        submissions, note that these tools have not been qualified as Medical
+        Device Development Tools
+        (https://www.fda.gov/medical-devices/medical-device-development-tools-mddt)
+        and the FDA has not evaluated the suitability of these tools within any
+        specific context of use. You may request feedback or meetings for medical
+        device submissions
+        (https://www.fda.gov/regulatory-information/search-fda-guidance-documents/requests-feedback-and-meetings-medical-device-submissions-q-submission-program)
+        as part of the Q-Submission Program.
       </p>
-      <p style="color: #4a3000; line-height: 1.7; margin: 0;">
-        For more information about the Catalog of Regulatory Science Tools, email
-        <a href="mailto:RST_CDRH@fda.hhs.gov" style="color: #7c4a00; font-weight: bold; text-decoration: underline;">
-          RST_CDRH@fda.hhs.gov
-        </a>.
-      </p>
-    </section>
+    </details>
     <section style="margin-bottom: 1.5rem;">
       <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; color: #1a202c;">Welcome to our classification branch.</h2>
       <p style="color: #333; line-height: 1.6;">Here we offer information resources on performance evaluation metrics and methods for AI/ML classification tasks. Before we proceed, it would be helpful to gather some context about your specific classification task. Please refer to the question at the bottom.</p>
