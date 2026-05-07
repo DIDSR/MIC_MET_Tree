@@ -104,7 +104,7 @@ The app will open automatically in your default web browser at:
 ---
 
 ## Folder Structure
-
+```
 mic-met-classification/
 ├── app.py                        # Main entry point — run this to start the app
 │
@@ -154,7 +154,7 @@ mic-met-classification/
 ├── requirements.txt              # Python package dependencies
 ├── .gitignore                    # Files excluded from Git
 └── README.md                     # This file
-
+```
 
 ---
 
