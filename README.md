@@ -96,10 +96,12 @@ The app will open automatically in your default web browser at:
 ## How to Use the App
 
 1. **Start at the welcome page** — read the overview, acknowledgements, and disclaimers
-2. **Answer the questions** — click the button that best describes your classification task
-3. **Arrive at a metric page** — use the dropdown to explore individual metrics
-4. **Navigate freely** — use the **Go Back** button to return to a previous question, or **Start Over** to begin again
-5. **Review your path** — your navigation history is shown at the bottom of the page
+<img width="146" height="409" alt="image" src="https://github.com/user-attachments/assets/7840323c-2379-4d95-a561-bd24fe5d4c57" />
+
+3. **Answer the questions** — click the button that best describes your classification task
+4. **Arrive at a metric page** — use the dropdown to explore individual metrics
+5. **Navigate freely** — use the **Go Back** button to return to a previous question, or **Start Over** to begin again
+6. **Review your path** — your navigation history is shown at the bottom of the page
 
 ---
 
