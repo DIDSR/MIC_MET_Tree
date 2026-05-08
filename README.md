@@ -108,6 +108,9 @@ The app will open automatically in your default web browser at:
 3. **Arrive at a metric page** — use the dropdown to explore individual metrics
 <img width="398" height="266" alt="image" src="https://github.com/user-attachments/assets/528422b8-8177-4bd1-b6d1-ffc0e4bd1fd8" />
 
+
+<img width="418" height="395" alt="image" src="https://github.com/user-attachments/assets/9fc1b6fe-260c-4097-8db6-d9c19e75f560" />
+
   
 4. **Navigate freely** — use the **Go Back** button to return to a previous question, or **Start Over** to begin again
 5. **Review your path** — your navigation history is shown at the bottom of the page
