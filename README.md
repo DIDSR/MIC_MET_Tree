@@ -98,10 +98,19 @@ The app will open automatically in your default web browser at:
 1. **Start at the welcome page** — read the overview, acknowledgements, and disclaimers
 <img width="146" height="409" alt="image" src="https://github.com/user-attachments/assets/7840323c-2379-4d95-a561-bd24fe5d4c57" />
 
-3. **Answer the questions** — click the button that best describes your classification task
-4. **Arrive at a metric page** — use the dropdown to explore individual metrics
-5. **Navigate freely** — use the **Go Back** button to return to a previous question, or **Start Over** to begin again
-6. **Review your path** — your navigation history is shown at the bottom of the page
+2. **Answer the questions** — click the button that best describes your classification task
+
+<img width="383" height="190" alt="image" src="https://github.com/user-attachments/assets/ded80e0c-cf34-4c2d-8425-25f1326e586b" />
+
+<img width="362" height="154" alt="image" src="https://github.com/user-attachments/assets/7c610f54-c824-4059-bae6-3d1c945d86c4" />
+
+
+3. **Arrive at a metric page** — use the dropdown to explore individual metrics
+<img width="398" height="266" alt="image" src="https://github.com/user-attachments/assets/528422b8-8177-4bd1-b6d1-ffc0e4bd1fd8" />
+
+  
+4. **Navigate freely** — use the **Go Back** button to return to a previous question, or **Start Over** to begin again
+5. **Review your path** — your navigation history is shown at the bottom of the page
 
 ---
 
